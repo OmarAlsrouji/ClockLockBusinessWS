@@ -1,0 +1,66 @@
+/* .navbar-default .navbar-toggle .icon-bar {
+    background-color:brown !important;
+} */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(165, 42, 42, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+}
+/* .showcase-background-1 {
+    background-image: url("resources/car3.jpg");
+} */
+
+.carousel-item {
+    height: 32rem;
+    background:#777;
+    color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+/* notification styles */
+.notification-container {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Set a high z-index value to ensure it's displayed above other elements */
+}
+
+.link-styler {
+    color: white;
+    text-decoration: none;
+}
+.link-styler:visited {
+    text-decoration: none;
+    color:white ;
+}
+
+/* Add animation for the notification */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.show {
+    display: block;
+    animation: slideIn 0.5s forwards;
+}
+/*  */
+
+@media (min-width:426px) {
+    .contact-section {
+        justify-content: center;
+        
+    }
+}
